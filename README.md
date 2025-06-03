@@ -11,7 +11,7 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone <repository-url>
+git clone git@github.com:polina-belyakaeva/mrg-loader.git
 cd mrg-loader
 ```
 
