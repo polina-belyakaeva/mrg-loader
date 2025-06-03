@@ -1,0 +1,205 @@
+.tableContainer {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  max-height: 668px;
+  border: 1px solid #C4C4C4;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+}
+
+.headerTable {
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: transparent;
+}
+
+.headerTable th {
+  padding: 8px 10px;
+  border: 1px solid #e0e0e0;
+  font-weight: 600;
+  text-align: center;
+  white-space: normal;
+  box-sizing: border-box;
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 20% 10% 7.5% 12.5% 15% 15% 10% 10%;
+  width: 100%;
+  align-items: center;
+  height: 52px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+.virtualizedContainer {
+  overflow-y: auto;
+  flex-grow: 1;
+  transition: height 0.3s ease-in-out;
+}
+
+.virtualizedContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.virtualizedContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.virtualizedContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.virtualizedContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 20% 10% 7.5% 12.5% 15% 15% 10% 10%;
+  width: 100%;
+  align-items: center;
+  height: 52px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: white;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.tableRow:hover {
+  background-color: #f5faff;
+}
+
+.tableCell {
+  padding: 0 10px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.loadLevelContainer {
+  width: 100%;
+  height: 24px;
+  border: 1px solid #E4E4E4;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.loadLevelBar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.loadLevelText {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  color: #212121;
+  z-index: 1;
+}
+
+.graphButton {
+  padding: 4px 12px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.graphButton:hover {
+  background-color: rgba(25, 118, 210, 0.1);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: flex-end;
+  max-width: stretch;
+  width: 100%;
+  align-items: center;
+  padding: 16px;
+  color: #6B7280;
+  font-family: Roboto;
+}
+
+.pageSizeWrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.pageSizeLabel {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.pageSizeSelect {
+  background-color: white;
+  border: transparent;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.pageSizeSelect:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+.pageNavWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.pageInfo {
+  margin: 0 12px;
+  font-size: 16px;
+}
+
+.pageButton {
+  background-color: transparent;
+  border: transparent;
+  border-radius: 4px;
+  padding: 4px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pageButton:not(:disabled):hover {
+  background-color: rgba(25, 118, 210, 0.1);
+}

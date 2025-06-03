@@ -1,0 +1,46 @@
+{
+  "name": "client",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/client/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project client --web",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "options": {
+        "outputPath": "dist/packages/client",
+        "compiler": "swc",
+        "webpackConfig": "packages/client/webpack.config.js"
+      },
+      "configurations": {
+        "production": {
+          "optimization": true
+        },
+        "development": {
+          "outputPath": "dist/packages/client-dev",
+          "optimization": false,
+          "sourceMap": true
+        }
+      }
+    },
+    "dev": {
+      "executor": "@nx/webpack:webpack",
+      "options": {
+        "outputPath": "dist/packages/client-dev",
+        "compiler": "swc",
+        "webpackConfig": "packages/client/webpack.config.js"
+      },
+      "configurations": {
+        "production": {
+          "optimization": true
+        },
+        "development": {
+          "outputPath": "dist/packages/client-dev",
+          "optimization": false,
+          "sourceMap": true
+        }
+      }
+    }
+  }
+}

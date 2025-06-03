@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model MRG {
+  id        Int     @id @default(autoincrement())
+  pipeline  String 
+  mg        String
+  km        Float
+  date      String
+  loadLevel Float
+  avgFlow   Float
+  tvps      Float
+}

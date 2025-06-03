@@ -1,0 +1,121 @@
+:global(.recharts-text) {
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+:global(.recharts-cartesian-axis-tick-value) {
+  transform: translateY(10px);
+}
+
+.dialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.dialogContent {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 1200px;
+  width: 100%;
+  height: 57%;
+  max-height: 664px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20);
+  position: relative;
+}
+
+.dialogTitle {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.dialogDescription {
+  margin: 10px 0 20px;
+  color: #666;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.graphContainer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.graphXAxisLine {
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #D9D9D9;
+}
+
+.customTooltip {
+  background-color: #212121;
+  border-radius: 23px;
+  padding: 5px 10px;
+  color: #fff;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.tooltipLabel {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.tooltipValue {
+  margin: 0;
+}
+
+.legendContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.legendItem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+}
+
+.legendText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.graphXAxisLine {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #D9D9D9;
+}

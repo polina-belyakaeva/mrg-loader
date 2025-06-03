@@ -1,0 +1,7 @@
+{
+  "name": "@mrg-loader/shared-dto",
+  "version": "0.0.1",
+  "dependencies": {
+    "@nestjs/swagger": "^7.0.0"
+  }
+}

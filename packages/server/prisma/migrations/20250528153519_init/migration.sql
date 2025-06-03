@@ -1,0 +1,13 @@
+-- CreateTable
+CREATE TABLE "MRG" (
+    "id" SERIAL NOT NULL,
+    "pipeline" TEXT NOT NULL,
+    "mg" TEXT NOT NULL,
+    "km" DOUBLE PRECISION NOT NULL,
+    "date" TEXT NOT NULL,
+    "loadLevel" DOUBLE PRECISION NOT NULL,
+    "avgFlow" DOUBLE PRECISION NOT NULL,
+    "tvps" DOUBLE PRECISION NOT NULL,
+
+    CONSTRAINT "MRG_pkey" PRIMARY KEY ("id")
+);
